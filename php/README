@@ -1,0 +1,18 @@
+COPECHECK (en intento de framework Pyrus Bean):
+
+REQUISITOS:
+    PHP 5.6 o superior (PREFERENTEMENTE 7)
+
+FLUJO DE EJECUCION:
+        El unico archivo que toca a todos, y unifica el codigo es init.php, el resto
+    lo consulta a el. Las consultas se hacen en query.php y este a su vez llama a
+    init.php que declara todo lo necesario para funcionar.
+
+REGLAS DE CODEO (STYLING CODE): 
+    1 - Los nombres de los archivos, de ser posible en ingles, lo mismo con las
+        variables.
+    2 - Las partes se llaman desde init, no se deberia incluir nada externo ni
+        desde otra parte, se amalgaman ahi.
+    3 - Todo framework o elemento externo, va en /php/sys/ext
+    4 - Todo lo que este fuera del framework pero que use de el, en el JS va en 
+        userBean.js
